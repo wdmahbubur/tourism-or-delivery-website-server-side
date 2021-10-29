@@ -26,10 +26,17 @@ async function run() {
         const database = client.db("tourism");
         const serviceCollection = database.collection("services");
 
+        //Add new service
         app.post('/service', async (req, res) => {
-            const service = req.body;
+            const service = req.body.service;
             const result = await serviceCollection.insertOne(service)
-            res.send(result)
+            res.send(result.insertedId)
+        })
+
+        //Get Service
+        app.get('/services', async (req, res) => {
+            const services = await serviceCollection.find({}).toArray();
+            res.send(services);
         })
 
     }
