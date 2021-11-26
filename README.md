@@ -2,13 +2,11 @@
 
 Website Live Preview: https://tourism-agency-6a87c.web.app/
 
-This a Travel agency website server. Use NodeJS and ExpressJS for develop this server. Use mongodb for Database store data. This server send and data from client side by API. 
+It is a Travel agency website server. Used NodeJS and ExpressJS to develop this server. Used MongoDB for the database. This server sends and receives data from the client-side by API. 
 
 ## Features
-- API 100% Response Time.
-- Fast and Robust.
+- API 100% response time.
+- Fast and robust.
 - use .env file to hide database credential.
-- this server is deployed in heroku.
-- Use Cors policy.
-
-
+- This server is deployed in Heroku.
+- Use cors policy.
